@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriyas Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc04f52cef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/SK.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Science and ML enthusiast</p>
+            <h1>Hi, I'm <span>Sriyas Kanduri </span><br>From Hyderabad,India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/face.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Sriyas Kanduri, a passionate Data Science and Machine Learning enthusiast currently pursuing a B.Tech in Computer Science Engineering at GITAM University, Hyderabad. With a strong foundation in Python, Java, and Data Engineering, I have worked on machine learning models, NLP techniques, and data visualization to extract meaningful insights from complex datasets.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Science</span><br>Training machine learning models and drawing meaningful insights from datasets</li>
+                        <li><span>Python</span><br>AIML using python and python based websites</li>
+                        <li><span>Machine Leaning</span><br>Bulding applications using huggingface Transformers </li>
+                        <li><span>Data analysis</span><br>Creating visualizations using seaborn and matplot to understand complex datasets</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>January 2025 - Current</span><br>Software Developer Intern | Viaplus</li>
+                        <li><span>May 2024 - June 2024</span><br>AIML and Data Science Intern | Dhanush Info Tech Pvt Ltd</li>
+                        <li><span>October 2023 – November 2023</span><br>Data Science Intern | Oasis Infobyte </li>
+                        <li><span>November 2023- December 2023</span><br>Developer Intern | Salesforce</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>Btech from GITAM university Hyderabad</li>
+                        <li><span>2021</span><br>12th from Pace Jr.Science Collage.</li>
+                        <li><span>2019</span><br>10th from Podar International School Mumbai</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Work & Expertise</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-chart-line"></i>
+                <h2>Data Science & Analytics</h2>
+                <p>Developing machine learning models and data-driven solutions to extract meaningful insights and improve decision-making.</p>
+            </div>
+            <div>
+                <i class="fas fa-brain"></i>
+                <h2>AI & NLP Solutions</h2>
+                <p>Implementing NLP techniques for tasks such as text analysis, plagiarism detection, and recommendation systems.</p>
+            </div>
+            <div>
+                <i class="fas fa-cogs"></i>
+                <h2>Machine Learning Models</h2>
+                <p>Building and fine-tuning predictive models with TensorFlow and Scikit-learn for applications in sales forecasting and classification.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------skills---------------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        
+        <!-- Added Tab Titles for Skills Categories -->
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openSkillTab('skill-frontend')">Frontend</p>
+            <p class="tab-links" onclick="openSkillTab('skill-backend')">Backend</p>
+            <p class="tab-links" onclick="openSkillTab('skill-devops')">DevOps</p>
+        </div>
+        
+        <!-- Frontend Skills Tab -->
+        <div class="skill-tab-contents active-tab" id="skill-frontend">
+            <div align="center" class="tech-icons">  
+                <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="100" /></a>  
+                <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="100" /></a>  
+                <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="100" /></a>  
+                <a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="100" /></a>  
+                <a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="100" /></a>  
+                <a href="https://cython.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/cython-original.svg" alt="Cython" height="100" /></a>  
+            </div>
+        </div>
+        
+        <!-- Backend Skills Tab -->
+        <div class="skill-tab-contents" id="skill-backend">
+            <div align="center" class="tech-icons">  
+                <a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="100" /></a>  
+                <a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="100" /></a>  
+                <a href="https://dotnet.microsoft.com/download/dotnet-framework" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/dot-net-original-wordmark.svg" alt=".NET" height="100" /></a>  
+                <a href="https://www.oracle.com/in/index.html" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/oracle-original.svg" alt="Oracle" height="100" /></a>  
+                <a href="https://opencv.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/opencv-icon.svg" alt="OpenCV" height="100" /></a>  
+                <a href="https://pytorch.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/pytorch-icon.svg" alt="pytorch" height="100" /></a>  
+                <a href="https://www.djangoproject.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/django-original.svg" alt="Django" height="100" /></a>  
+                <a href="https://www.gnu.org/software/bash/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg" alt="Bash" height="100" /></a>  
+            </div>
+        </div>
+        
+        <!-- DevOps Skills Tab -->
+        <div class="skill-tab-contents" id="skill-devops">
+            <div align="center" class="tech-icons">  
+                <a href="https://github.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="100" /></a>  
+                <a href="https://www.docker.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/docker-original-wordmark.svg" alt="Docker" height="100" /></a>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Customer Churn Perdiction</h3>
+                    <p>This project focuses on predicting customer churn using machine learning techniques. The model analyzes customer behavior and identifies potential churn risks, helping businesses take proactive measures to retain customers</p>
+                    <a href="https://github.com/sriyaskanduri/telecom_churn_prediction"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> Credit Card Fraud Detection</h3>
+                    <p>This project detects fraudulent credit card transactions using Random Forests and Decision Trees. A key challenge is class imbalance, as fraud cases make up only 0.17% of the dataset. The project applies techniques to address this issue and improve model performance.</p>
+                    <a href="https://github.com/sriyaskanduri/credit-card-fraud-detction"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3> Amazon Alexa Review Analysis</h3>
+                    <p>This project focuses on analyzing Amazon Alexa product reviews using Natural Language Processing (NLP) techniques. The goal is to extract insights from customer feedback, determine sentiment polarity, and identify common themes in user opinions.</p>
+                    <a href="https://github.com/sriyaskanduri/amazon_alexa_review_analysis"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://github.com/sriyaskanduri" class="btn" target="_blank">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sriyaskanduri2@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9930493627</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sriyas-kanduri-709010222/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume_sriyas (3).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © sriyas. Made wtih <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // New function for skills section tabs
+    var skillTablinks = document.querySelectorAll("#skills .tab-links");
+    var skillTabcontents = document.getElementsByClassName("skill-tab-contents");
+
+    function openSkillTab(tabname){
+        for(skillTablink of skillTablinks){
+            skillTablink.classList.remove("active-link");
+        }
+        for(skillTabcontent of skillTabcontents){
+            skillTabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzyfdBwv72mCV0KAc4srFoPWSxgsxeRF1BfDUKJntJW-Ck1sx2Lc2G7v2wvGmNwf1asng/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
